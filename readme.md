@@ -1,12 +1,20 @@
 ## Overview
 CAEWeb is a collection of single page web applications that is used by a Universtiy computer lab to provide a variety of functions which include: Room Scheduling, A/V Log, Inventory, and Employee functions such as clocking in and out, employee schedules, timesheet reporting and generation. The version here on Github is not the exact same version as what was implemented at the University, but retains most of the same features.
 
+A demo of this application can be seen at the following [Link](http://barnesbrothers.homeserver.com/caeweb). The application is wired up to an actual database, and although I don't mind you playing around to see how the application functions, please don't be a troll. Otherwise I will be forced to remove the database component and alter the behavior of the application to something different than what the code reflects.
+
+Use the following login information to try it out.
+
+UN: admin1
+
+PW: password
+
 ## History
-The University that I worked at needed to have a system that was already doing these functions replaced. The old system was very ummaintainable, and hard to use. This version here was redesigned, and built from the ground up with maintainablity in mind.
+The University that I worked at needed a new system to replace an existing one that was already doing these functions. The old system was very ummaintainable, and hard to use. This version shown here was redesigned, and built from the ground up with maintainablity in mind.
 
 ## Technologies
 ### Laravel 4.0.*
-The University version of the CAEWeb application was created in Laravel 4.0.* with only two external PHP packages. The first package is a LDAP package that was written by me, and is available from this same Github account. This LDAP package is not used in the version of CAEWeb here on Github, and defaults to Eloquent and the database for user authentication. The second package is one offered by Conar Welsh. He has a mustache wrapper so that mustache templates can be used with Laravel. Most of the templates used in the app are written with Mustache, and his package helped get those templates into the application.
+The University version of the CAEWeb application was created in Laravel 4.0.* with only two external PHP packages. The first package is a LDAP package that was written by me, and is available from this same Github account. This LDAP package is not used in the version of CAEWeb here on Github. This version uses the default of Eloquent and the database for user authentication. The second package is one offered by Conar Welsh. He has a mustache wrapper so that mustache templates can be used with Laravel. Most of the templates used in the app are written with Mustache, and his package helped get those templates into the application.
 
 ### Backbone.js and Marionette.js
 Marionette is a Javascript framework that was used for the client side of the application. Marionette has only one dependency, Backbone.js. Backbone is a popular client side JS framework that adds some basic MVC structure to appications. The dependencies for Backbone are: jQuery, and Underscore.js. All 4 files are required for the client side. All 4 files should be loaded with a CDN, but currently may not be???
