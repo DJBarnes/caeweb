@@ -477,6 +477,7 @@ All of the table structure has been listed below for reference. Tables can be cr
 |---------------------|------------------|------|-----|---------------------|----------------|
 | id                  | int(10) unsigned | NO   | PRI | NULL                | auto_increment |
 | username            | varchar(16)      | NO   | UNI | NULL                |                |
+| password            | varchar(60)      | NO   |     | NULL                |                |
 | fullname            | varchar(40)      | NO   |     | NULL                |                |
 | position_id         | int(10) unsigned | NO   | MUL | NULL                |                |
 | email               | varchar(40)      | NO   |     | NULL                |                |
